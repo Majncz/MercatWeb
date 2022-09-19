@@ -8,6 +8,11 @@
 }
 
 
+.what-carousel {
+    width: 1px;
+    display: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -528,6 +533,10 @@ footer {
 
 /* Makes carousel smaller */
 @media (max-height: 793px) and (min-height: 662px) {
+    .what-carousel {
+        width: 2px;
+    }
+
     .other-work-image {
         width: 300px;
         height: fit-content;
@@ -598,6 +607,10 @@ footer {
 
 /* Makes carousel smaller */
 @media (max-width: 1351px) {
+    .what-carousel {
+        width: 2px;
+    }
+
     .other-work-image {
         width: 300px;
         height: fit-content;
@@ -651,6 +664,10 @@ footer {
 
 /* Shrinks carousel slider */
 @media (max-width: 1002px) {
+    .what-carousel {
+        width: 2px;
+    }
+
     .other-work-image {
         margin-left: -200px;
         margin-right: -200px;
@@ -873,6 +890,10 @@ footer {
 
 /* Makes carousel full width */
 @media (max-width: 763px) {
+    .what-carousel {
+        width: 3px;
+    }
+
     .other-work-image {
         display: none;
     }

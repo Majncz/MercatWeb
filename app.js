@@ -3,29 +3,34 @@ const carouselSlideLeft = document.querySelector(".other-work-image-slide-left")
 const carouselSlideRight = document.querySelector(".other-work-image-slide-right")
 const carouselSlideText = document.querySelector(".current-work-podtext-parent")
 
+whatCarousel = document.querySelector(".what-carousel")
 let counter = 0;
 let size;
 let sizeOther;
 checkSize();
 counter = 0;
-console.log("Does it even log?")
+console.log("Does it even log?");
+console.log(getComputedStyle(whatCarousel).width);
 
 function checkSize() {
-    if ((window.innerHeight > 793 || window.innerHeight <= 662) && window.innerWidth > 1351) {
+    if (String(getComputedStyle(whatCarousel).width) == "1px") {
         if (size != 685) {
             counter = 3;
         }
         size = 685;
         sizeOther = 450;
         console.log("Nothing seems to work here2");
-    } else if (((window.innerHeight <= 793) && (window.innerHeight > 662)) || (window.innerWidth <= 1351 && window.innerWidth > 763)) {
+    } else if (String(getComputedStyle(whatCarousel).width) == "2px") {
         if (size != 550) {
             counter = 3;
         }
         size = 550;
         sizeOther = 300;
         console.log("Nothing seems to work here1");
-    } else if (window.innerWidth <= 763) {
+    } else if (String(getComputedStyle(whatCarousel).width) == "3px") {
+        if (size != window.innerWidth) {
+            counter = 3;
+        }
         size = window.innerWidth;
         console.log(size);
         console.log("Something seems to work here");
