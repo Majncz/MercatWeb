@@ -24,6 +24,7 @@ function checkSize() {
         sizeOther = 300;
     } else if (window.innerWidth <= 763) {
         size = window.innerWidth;
+        console.log(size);
     }
 }
 
