@@ -15,6 +15,13 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
+html, body {
+    overflow-x: hidden;
+}
 
 /*This all is navbar*/
 header {
