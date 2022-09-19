@@ -93,6 +93,7 @@ main {
     height: calc(100vh - 55px);
     padding-left: auto;
     padding-right: auto;
+    scroll-behavior: smooth;
 }
 
 .page-section {
