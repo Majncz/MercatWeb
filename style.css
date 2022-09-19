@@ -15,14 +15,6 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    width: 100vw;
-}
-
-html, body {
-    overflow-x: hidden;
-}
 
 /*This all is navbar*/
 header {
@@ -97,7 +89,10 @@ header {
 main {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: calc(100vh - 55px);
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .page-section {
