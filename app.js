@@ -8,6 +8,7 @@ let size;
 let sizeOther;
 checkSize();
 counter = 0;
+console.log("Does it even log?")
 
 function checkSize() {
     if ((window.innerHeight > 793 || window.innerHeight <= 662) && window.innerWidth > 1351) {
@@ -16,15 +17,18 @@ function checkSize() {
         }
         size = 685;
         sizeOther = 450;
+        console.log("Nothing seems to work here2");
     } else if (((window.innerHeight <= 793) && (window.innerHeight > 662)) || (window.innerWidth <= 1351 && window.innerWidth > 763)) {
         if (size != 550) {
             counter = 3;
         }
         size = 550;
         sizeOther = 300;
+        console.log("Nothing seems to work here1");
     } else if (window.innerWidth <= 763) {
         size = window.innerWidth;
         console.log(size);
+        console.log("Something seems to work here");
     }
 }
 
