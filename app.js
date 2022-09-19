@@ -23,7 +23,7 @@ function checkSize() {
         size = 550;
         sizeOther = 300;
     } else if (window.innerWidth <= 763) {
-        size = 390;
+        size = window.innerWidth;
     }
 }
 
