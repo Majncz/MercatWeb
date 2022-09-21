@@ -2,6 +2,7 @@ const carouselSlide = document.querySelector(".current-work-image-slide")
 const carouselSlideLeft = document.querySelector(".other-work-image-slide-left")
 const carouselSlideRight = document.querySelector(".other-work-image-slide-right")
 const carouselSlideText = document.querySelector(".current-work-podtext-parent")
+let popupDisplayed = false;
 
 whatCarousel = document.querySelector(".what-carousel")
 let counter = 0;
@@ -78,3 +79,25 @@ function main() {
 }
 
 setInterval(main, 5000);
+
+
+// Code for Contact popup
+document.querySelector("#contactClick").addEventListener("click", function(){
+    if (popupDisplayed) {
+        document.querySelector(".popup").style.display = "none";
+        popupDisplayed = false;
+    } else {
+        document.querySelector(".popup").style.display = "flex";
+        popupDisplayed = true;
+    }
+})
+
+document.addEventListener("click", function(event) {
+    if (event.target.closest(".popup")) return;
+    if (event.target.closest(".navbar-button")) {
+    } else {
+        document.querySelector(".popup").style.display = "none";
+        popupDisplayed = false;
+    }
+})
+

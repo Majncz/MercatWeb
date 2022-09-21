@@ -478,6 +478,47 @@ footer {
     display: none;
 }
 
+.popup {
+    --popup-width: 685px;
+    --popup-height: 100px;
+    width: var(--popup-width);
+    height: var(--popup-height);
+    z-index: 90;
+    position: absolute;
+    margin-left: calc(50vw - calc(var(--popup-width)/2));
+    margin-top: calc(calc(50vh - 22.5px) - calc(var(--popup-height)/2));
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 0px 24px 17px rgba(0, 0, 0, 0.25);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 51px;
+    padding-right: 51px;
+}
+
+.mail {
+    box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.25);
+    width: 471px;
+    height: 33px;
+    background-color: #dfdfdf;
+    border: 1px solid #888888;
+    border-radius: 11px;
+    text-indent: 15px;
+}
+
+.submit {
+    height: 33px;
+    width: 88px;
+    background: #00FFC2;
+    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
 /* Makes prices smaller */
 @media (max-height: 870px) and (min-height: 662px) {
     .price-plan-2 {
